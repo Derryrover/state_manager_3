@@ -1,0 +1,21 @@
+{
+  "apps": {
+    "http": {
+      "servers": {
+        "dev": {
+          "listen": [":8080"],
+          "routes": [
+            {
+              "handle": [
+                {
+                  "handler": "file_server",
+                  "root": "./"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
